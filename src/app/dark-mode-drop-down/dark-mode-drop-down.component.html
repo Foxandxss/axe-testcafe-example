@@ -1,0 +1,33 @@
+<div id="user-preference">
+  <button class="button" id="color-scheme">Theme</button>
+  <fieldset id="radio-wrapper" tabindex="-1">
+    <legend class="sr-only">Theme</legend>
+    <div>
+      <input
+        id="system-default"
+        type="radio"
+        name="theme"
+        (click)="switchColorTheme($event)"
+      />
+      <label for="system-default">System Default</label>
+    </div>
+    <div>
+      <input
+        id="light"
+        type="radio"
+        name="theme"
+        (click)="switchColorTheme($event)"
+      />
+      <label for="light">Light</label>
+    </div>
+    <div>
+      <input
+        id="dark"
+        type="radio"
+        name="theme"
+        (click)="switchColorTheme($event)"
+      />
+      <label for="dark">Dark</label>
+    </div>
+  </fieldset>
+</div>
