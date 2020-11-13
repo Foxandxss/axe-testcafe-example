@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DarkModeDropDownComponent implements OnInit {
   storageKey = 'color-scheme';
 
-  ngOnInit() {
+  ngOnInit(): void {
     const storedColorScheme = localStorage.getItem(this.storageKey);
 
     if (storedColorScheme) {
